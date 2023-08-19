@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Card } from 'antd'
 import CardFruit from './components/CardFruit'
 import { frutas } from './utils/constants'
 import './App.css'
@@ -16,11 +13,12 @@ function App() {
 
 
   return (
-    <div style={{display:'flex', flexDirection:'column'}}>
-    <Contador increase={increase} reset={reset} decrease={decrease}/>
- <div className='fruit_container'>
-  {frutas.map(fruta => (<CardFruit key={fruta.title} counter={count} title={fruta.title} description={fruta.description} img={fruta.img} />))}
- </div>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <h1 style={{textAlign:'center'}}>Actividad 1</h1>
+      <Contador increase={increase} reset={reset} decrease={decrease} />
+      <div className='fruit_container'>
+        {frutas.map(fruta => (<CardFruit key={fruta.title} counter={count} title={fruta.title} description={fruta.description} img={fruta.img} />))}
+      </div>
     </div>
   )
 }

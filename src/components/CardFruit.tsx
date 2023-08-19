@@ -1,4 +1,3 @@
-import React from 'react'
 import { Card } from 'antd'
 const { Meta } = Card;
 const CardFruit = ({title,description,counter, img}:any) => {
@@ -27,7 +26,6 @@ const CardFruit = ({title,description,counter, img}:any) => {
                 title={`${title} - ${counter}`}
                 description={description}
             />
-            Contador:
         </Card>
     )
 }
